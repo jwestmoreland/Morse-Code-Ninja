@@ -435,7 +435,8 @@ foreach(@sentences) {
         while ($exit_code != 0 && (!$no_spoken || $filename_map_key =~ m/context/)) {
           my $textFile = File::Spec->rel2abs("$filename_base-${counter}");
 
-          my $cmd = "./text2speech.py \"$textFile\" $text_to_speech_engine $lang $cache_directory";
+          my $cmd = "python text2speech.py \"$textFile\" $text_to_speech_engine $lang $cache_directory";
+#          my $cmd = "./text2speech.py \"$textFile\" $text_to_speech_engine $lang $cache_directory";
           print "execute $cmd\n";
 
           my $output = `$cmd`;
