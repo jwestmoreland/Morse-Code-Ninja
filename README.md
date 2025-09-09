@@ -105,7 +105,7 @@ perl render.pl -i <your_example>.txt
 
 Command line options can be used - or the render.pl file can be edited:
 
-my $speedSize = @speeds;
+my $speedSize = @speeds; 
 @speeds = ($speedSize > 0) ? @speeds : ("15", "17", "20", "22", "25", "28", "30", "35", "40", "45", "50");
 
 27 and 31 can be added to support project OVERLEARN:
