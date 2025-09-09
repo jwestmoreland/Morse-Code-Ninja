@@ -94,3 +94,30 @@ To run
 ```
 
 The script `morse-code-ninja.sh` wraps the docker compose command passing all arguments to the dockerized `render.pl` 
+
+# Some Hints:
+I was able to set up a virtual environment using the [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) tools - note this is a tool that is python based - I can provide more detail if someone would like to see that regarding basic set up -
+but most reading this are more than likely familiar with the Anaconda environment.
+
+Once the installation of tools like perl, ffmpeg; etc. are done - you can run the following in your virtual environment:
+
+perl render.pl -i <your_example>.txt
+
+Command line options can be used - or the render.pl file can be edited:
+
+my $speedSize = @speeds;
+@speeds = ($speedSize > 0) ? @speeds : ("15", "17", "20", "22", "25", "28", "30", "35", "40", "45", "50");
+
+27 and 31 can be added to support project OVERLEARN:
+
+my $speedSize = @speeds;
+@speeds = ($speedSize > 0) ? @speeds : ("15", "17", "20", "22", "25", "27", "28", "30", "31", "35", "40", "45", "50");
+
+I've already converted quite a few stories I'm fond of - usually paragraph by paragraph to start.
+Kudos go out to Kurt Zoglmann - 'the' Morse Code Ninja for developing this 'work-flow'.  
+
+Oh, I left this out - I'm running this - and Anaconda - under Win11.
+In my case - I had all of this set up already - including Amazon AWS - so getting the rest set up and done was fairly straight forward.
+
+I like this - it helps - a lot.  I hope you benefit from these tools as well and 'reading' via CW is educational, fun and rewarding.
+
