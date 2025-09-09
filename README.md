@@ -96,6 +96,7 @@ To run
 The script `morse-code-ninja.sh` wraps the docker compose command passing all arguments to the dockerized `render.pl` 
 
 # Some Hints:
+(@jwestmoreland edit)
 I was able to set up a virtual environment using the [Anaconda](https://www.anaconda.com/docs/getting-started/getting-started) tools - note this is a tool that is python based - I can provide more detail if someone would like to see that regarding basic set up -
 but most reading this are more than likely familiar with the Anaconda environment.
 
